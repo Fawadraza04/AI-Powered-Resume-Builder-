@@ -4,47 +4,55 @@ import { useResume } from "../contexts/ResumeContext";
 import { useAuth } from "../contexts/AuthContext";
 import { Check, Eye } from "lucide-react";
 
+// Import template images
+import modernImg from "../assets/templates/modern.webp";
+import minimalistImg from "../assets/templates/minimalist.webp";
+import creativeImg from "../assets/templates/creative.webp";
+import professionalImg from "../assets/templates/professional.webp";
+import executiveImg from "../assets/templates/executive.png";
+import elegantImg from "../assets/templates/elegant.webp";
+
 const templates = [
   {
     id: "modern",
     name: "Modern",
     description: "Clean and contemporary design with a sidebar",
-    preview: "/src/assets/templates/modern.webp",
+    preview: modernImg,
     fallback: "bg-gradient-to-br from-indigo-500 to-purple-600",
   },
   {
     id: "minimalist",
     name: "Minimalist",
     description: "Simple and elegant with focus on content",
-    preview: "/src/assets/templates/minimalist.webp",
+    preview: minimalistImg,
     fallback: "bg-gradient-to-br from-gray-700 to-gray-900",
   },
   {
     id: "creative",
     name: "Creative",
     description: "Bold and unique design for creative roles",
-    preview: "/src/assets/templates/creative.webp",
+    preview: creativeImg,
     fallback: "bg-gradient-to-br from-pink-500 to-orange-500",
   },
   {
     id: "professional",
     name: "Professional",
     description: "Traditional layout preferred by corporations",
-    preview: "/src/assets/templates/professional.webp",
+    preview: professionalImg,
     fallback: "bg-gradient-to-br from-blue-600 to-blue-800",
   },
   {
     id: "executive",
     name: "Executive",
     description: "Sophisticated design for senior positions",
-    preview: "/src/assets/templates/executive.png",
+    preview: executiveImg,
     fallback: "bg-gradient-to-br from-slate-700 to-slate-900",
   },
   {
     id: "elegant",
     name: "Elegant",
     description: "Refined style with subtle accents",
-    preview: "/src/assets/templates/elegant.webp",
+    preview: elegantImg,
     fallback: "bg-gradient-to-br from-emerald-500 to-teal-600",
   },
 ];
