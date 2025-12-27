@@ -18,37 +18,29 @@ import {
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
-// Import template images
-import modernImg from "../assets/templates/modern.webp";
-import minimalistImg from "../assets/templates/minimalist.webp";
-import creativeImg from "../assets/templates/creative.webp";
-import professionalImg from "../assets/templates/professional.webp";
-import executiveImg from "../assets/templates/executive.png";
-import elegantImg from "../assets/templates/elegant.webp";
-
 const templateData = {
   modern: {
-    preview: modernImg,
+    preview: "/assets/templates/modern.webp",
     fallback: "bg-linear-to-br from-indigo-500 to-purple-600",
   },
   minimalist: {
-    preview: minimalistImg,
+    preview: "/assets/templates/minimalist.webp",
     fallback: "bg-linear-to-br from-gray-700 to-gray-900",
   },
   creative: {
-    preview: creativeImg,
+    preview: "/assets/templates/creative.webp",
     fallback: "bg-linear-to-br from-pink-500 to-orange-500",
   },
   professional: {
-    preview: professionalImg,
+    preview: "/assets/templates/professional.webp",
     fallback: "bg-linear-to-br from-blue-600 to-blue-800",
   },
   executive: {
-    preview: executiveImg,
+    preview: "/assets/templates/executive.png",
     fallback: "bg-gradient-to-br from-slate-700 to-slate-900",
   },
   elegant: {
-    preview: elegantImg,
+    preview: "/assets/templates/elegant.webp",
     fallback: "bg-linear-to-br from-emerald-500 to-teal-600",
   },
 };
