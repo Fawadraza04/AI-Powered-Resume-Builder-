@@ -11,7 +11,7 @@ const MinimalistTemplate = ({ resume }) => {
       {/* Header */}
       <div className="text-center mb-8 border-b border-gray-200 pb-6">
         <img
-          src="/src/assets/templates/minimalist/profile-placeholder.png"
+          src="https://via.placeholder.com/100x100/374151/ffffff?text=Photo"
           alt="Profile"
           className="w-24 h-24 rounded-full mx-auto mb-4"
         />

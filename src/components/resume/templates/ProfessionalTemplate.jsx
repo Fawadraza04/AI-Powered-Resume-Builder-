@@ -11,7 +11,7 @@ const ProfessionalTemplate = ({ resume }) => {
       {/* Header */}
       <div className="text-center border-b-2 border-gray-800 pb-4 mb-6">
         <img
-          src="/src/assets/templates/professional/profile-placeholder.png"
+          src="https://via.placeholder.com/100x100/1e40af/ffffff?text=Photo"
           alt="Profile"
           className="w-24 h-24 rounded-full mx-auto mb-4"
         />

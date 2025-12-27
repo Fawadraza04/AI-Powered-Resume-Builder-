@@ -11,7 +11,7 @@ const CreativeTemplate = ({ resume }) => {
       {/* Header */}
       <div className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white p-8">
         <img
-          src="/src/assets/templates/creative/profile-placeholder.png"
+          src="https://via.placeholder.com/100x100/ec4899/ffffff?text=Photo"
           alt="Profile"
           className="w-24 h-24 rounded-full mx-auto mb-4"
         />

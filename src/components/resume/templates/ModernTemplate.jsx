@@ -28,7 +28,7 @@ const ModernTemplate = ({ resume }) => {
           {/* Name & Image */}
           <div className="mb-8">
             <img
-              src="/src/assets/templates/modern/profile-placeholder.png"
+              src="https://via.placeholder.com/100x100/4338ca/ffffff?text=Photo"
               alt="Profile"
               className="w-24 h-24 rounded-full mx-auto mb-4"
             />
