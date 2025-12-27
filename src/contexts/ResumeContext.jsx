@@ -51,19 +51,15 @@ export const ResumeProvider = ({ children }) => {
 
     setLoading(true);
     try {
-      const q = query(
-        collection(db, "resumes"),
-        where("userId", "==", currentUser.uid),
-        orderBy("updatedAt", "desc")
-      );
-      const querySnapshot = await getDocs(q);
+      const { data, error } = await supabase
+        .from("resumes")
+        .select("*")
+        .eq("user_id", currentUser.id)
+        .order("updated_at", { ascending: false });
 
-      const resumesData = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
+      if (error) throw error;
 
-      setResumes(resumesData);
+      setResumes(data);
     } catch (error) {
       console.error("Error fetching resumes:", error);
     }
